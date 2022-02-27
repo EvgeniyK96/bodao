@@ -1,0 +1,47 @@
+@media (max-width: 768px){
+.container{
+	max-width: 728px;
+}
+.logo{
+	width: 100px;
+	height: 100px;
+}
+h1{
+	font-size: 36px;
+}
+a, p{
+	font-size: 16px;
+}
+
+.name{
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.name div{
+	font-size: 64px;
+	margin-right: 40px;
+}
+.location-text{
+	font-size: 14px;
+}
+
+.Bodao-land h3, .Bodao-land h4{
+	font-size: 16px;
+}
+.Bodao-land h3{
+	width: 222px;
+}
+.Bodao-land h4{
+	width: 380px;
+}
+.Bodao-land button{
+	right: 0;
+}
+.about-img,
+.Rectangle-1,
+.Rectangle-2{
+    width: 354px;
+}
+
+}

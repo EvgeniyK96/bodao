@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 1920px;
+	background: black;
+	font-family: 'Ubuntu', Arial, serif;
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 16px;
+    width: 100%; 
+}
+h1{
+	font-size: 72px;
+	font-weight: 700 bold;
+	text-transform: uppercase;
+}
+.container {
+    max-width: 1290px;
+    
+    margin: 0 auto;
+    width: 100%;
+}
+p{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 170%;
+}
+
+a:hover{
+	color: #fcd900;
+}
+/*header*/
+header .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+
+.location{
+	
+	display: flex;
+	align-content: space-between;
+}
+.location-text{
+	font-size: 16px;
+	line-height: 180%;
+	
+}
+.location-img{
+	margin-right: 10px;
+	margin-top: 10px;
+	position: relative;
+} 
+.location-img::before{
+	content: '';
+	position: absolute;
+	border: 2.8px solid #ffffff;
+	border-radius: 50%;
+	top: 7px;
+	left: 7px;
+	width: 10px;
+	height: 10px;
+}
+
+.header-call {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.header-call__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.header-call__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+.header-call__phone {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+.header-call__whatsapp {
+    font-size: 12px;
+    color: #fff;
+}
+
+
+/*-----*/
+section{
+	margin-bottom: 150px;
+}
+.Bodao-land{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	margin-top: 30px;
+	background: url(../img/boxer.png) no-repeat center;
+	height: 750px;
+	position: relative;
+}
+.Bodao-land h3{
+	display: inline-block;
+	font-size: 24px;
+	width: 330px;
+	margin-top: 85px;
+	font-weight: 500;
+}
+.name{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 155px;
+	margin-bottom: 200px;
+
+}
+.name div{
+	font-size: 72px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-right: 20px;
+}
+.Bodao-land h4{
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 150%;
+	width: 410px;
+	
+	display: inline-block;
+}
+button{
+	width: 277px;
+	height: 55px;
+	background: #F9BA50;
+    border-radius: 0px 40px 40px 0px;
+    color: #ffffff;
+    font-size: 18px;
+    word-spacing: 54px;
+    text-transform: uppercase;
+}
+
+button:hover{
+	cursor: pointer;
+	background: #000;
+	border-color: #fff;
+}
+.Bodao-land button{
+   position: absolute;
+   right: 10%;
+   bottom: 40px;
+}
+/*  -------- */
+.about{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-img{
+	min-width: 650px;
+	height: 800px;
+	background: url(../img/about-img.png) no-repeat;
+	position: relative;
+	
+}
+.about-title{
+	width: 520px;
+	margin-left: 120px;
+}
+.about-title p{
+	margin-top: 60px;
+}
+.about-title button{
+    margin-top: 90px;
+}
+.chris-kendal{
+	position: absolute;
+width: 420px;
+height: 420px;
+left: 355px;
+bottom: -80px;
+}
+.chris-kendal img{
+	border: 2px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 50%;
+}
+
+/*------*/
+.teacher-img{
+	display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Rectangle-1{
+	background: url(../img/Rectangle23.png) no-repeat;
+	width: 630px;
+	height: 550px;
+	margin-right: 30px;
+	position: relative;
+}
+.teacher-title{
+	width: 630px;
+	
+}
+.Rectangle-2{
+	background: url(../img/Rectangle25.png) no-repeat;
+    height: 450px;
+    position: relative;
+    width: 630px;
+
+}
+
+.teacher-img h1{
+	font-size: 64px;
+	
+	position: absolute;
+	bottom: -30px;
+}
+.teacher-img h1 span{
+	position: relative;
+    color: black;
+    -webkit-text-stroke: .02em #ffffff;
+}
+.teacher-img h1 span::before{
+	content: attr(data-text);
+  	position: absolute; /* в том же месте той же ширины */
+  	left: 0;
+  	right: 0;
+  	-webkit-text-stroke: .02em #ffffff;
+}
+.teacher-img p{
+	margin-top: 50px;
+}
+
+/*________*/
+
+
+.directions-img{
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	margin-top: 100px;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.direct{
+	width: 25%;
+	min-width: 380px;
+	height: 700px;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+.direct h2{
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 120%;
+	position: relative;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: .04em #ffffff;
+}
+.direct h2::before{
+	content: attr(data-text);
+  	position: absolute; /* в том же месте той же ширины */
+  	left: 0;
+  	right: 0;
+  	-webkit-text-stroke: .04em #ffffff;
+}
+.box{
+    background: url(../img/box.png) no-repeat center;
+    transition: background-size 1s;
+    background-size: 100%;
+}
+.kikbox{
+    background: url(../img/kik-box.png) no-repeat center;
+    transition: background-size 1s;
+    background-size: 100%;
+}
+.mma{
+    background: url(../img/mma.png) no-repeat center;
+    transition: background-size 1s;
+    background-size: 100%;
+}
+.jujutsu{
+    background: url(../img/jujitsu.png) no-repeat center;
+    transition: background-size 1s;
+    background-size: 100%;
+}
+.box:hover,
+.kikbox:hover,
+.mma:hover,
+.jujutsu:hover{
+    background-size: 120%;
+  
+}
+
+/*__________*/
+
+.timetable-cont{
+	margin: 100px 0 0 0;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.timetable-item{
+	width: 410px;
+	padding: 30px 30px 40px 30px;
+	position: relative;
+	background: #17171A;
+	margin: 0 30px 30px 0;
+}
+
+.timetable-item:nth-child(3n), 
+.instagram-img img:nth-child(3n){
+	margin-right: 0;
+}
+@media (max-width: 1314px) {
+    .timetable-item:nth-child(3n){
+	margin-right: 30px;}
+    .instagram-img img:nth-child(3n){
+    	margin-right: 20px;
+    }}    
+
+.timetable-item h3{
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 120%;
+}
+.timetable-item span{
+	position: absolute;
+	right: 30px;
+	top: 50px;
+}
+.timetable-item p{
+	margin: 50px 0 60px;
+}
+.timetable-item button{
+	margin-top: 30px;
+}
+.timetable-item h4{
+	position: absolute;
+	right: 30px;
+	bottom: 127px;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 120%;
+	text-decoration-line: line-through;
+}
+
+/*______*/
+
+.instagram-img{
+	margin-top: 100px;
+}
+.instagram-img img{
+	margin: 0 20px 20px 0;
+}
+
+/*----------*/
+
+footer{
+	margin-bottom: 140px;
+}
+
+.footer__inner{
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+.footer__desc{
+	width: 410px;
+    margin-bottom: 40px;
+}
+.footer-social{
+	list-style-type: none;
+	margin-bottom: 40px;
+	display: flex;
+}
+.footer-social__item:not(:last-child) {
+    margin-right: 44px;
+}
+.footer-social__item {
+    width: 25px;
+    height: 25px;
+}
+.footer-social__item img{
+    fill: #fff;
+    transition: all 0.2s;
+}
+.footer-social__item path:hover{
+	fill: #FFB000;
+	
+}
+.footer__politic-item {
+    line-height: 150%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-nav, .footer-contacts {
+    padding-top: 40px;
+}
+.footer-nav__title, .footer-contacts__title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 60px;
+}
+.footer-nav__list, .footer-contacts__list {
+    list-style-type: none;
+}
+.footer-nav__item:not(:last-child),
+.footer-contacts__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.footer-nav__link {
+    font-size: 18px;
+    line-height: 120%;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+}
+
+.footer-contacts__param {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #f9ba50;
+    margin-bottom: 15px;
+}
+.footer-contacts__value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.form{
+	position: fixed;
+	top: 20%;
+	left: 30%;
+	background: #f9ba50;
+	border-radius: 10px;
+	z-index: 10;
+	width: 400px;
+	height: 400px;
+	display: none;
+
+}
+.active{
+	display: flex;
+}
